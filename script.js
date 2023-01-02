@@ -1,4 +1,7 @@
 let heroLink = document.querySelector(".hero-link");
+const harm = document.querySelector(".harmburger");
+const link = document.querySelector("#Links");
+const close = document.querySelector(".closeHarm");
 
 function myFunc(x) {
 		if (x.matches) {
@@ -17,3 +20,14 @@ const saVer = saver.toUpperCase();
 heroLink.innerHTML = saVer;
 
 console.log(hero);
+
+function myFunction() {
+  if (link.style.display == "block") {
+    link.style.display = "none";
+  } else {
+    link.style.display = "block";
+  }
+}
+
+harm.addEventListener("click", myFunction);
+close.addEventListener("click", myFunction);

@@ -69,6 +69,132 @@
     color: var(--hero-link);
   }
 
+	.topnav {
+		position: absolute;
+		right: 0;
+		width: 100%;
+		padding: 20px 5%;
+		display: flex;
+		justify-content: flex-end;
+		box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.169);
+		z-index: 1;
+	}
+	
+	.harmburger {
+		cursor: pointer;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: center;
+		gap: 6px;
+	}
+	
+	.bar1 {
+		width: 25px;
+		height: 3px;
+		border-radius: 3px;
+		background-color: var(--logo);
+		margin: 0px 0;
+		transition: 0.4s;
+	}
+	
+	.bar2 {
+		width: 15px;
+		height: 3px;
+		background-color: var(--logo);
+		margin: 0px 0;
+		transition: 0.4s;
+		border-radius: 3px;
+	}
+	
+	.bar3 {
+		width: 25px;
+		height: 3px;
+		background-color: var(--logo);
+		margin: 0px 0;
+		transition: 0.4s;
+		border-radius: 3px;
+	}
+	
+	.change .bar1 {
+		transform: translate(0, 9px) rotate(-50deg);
+	}
+	
+	.change .bar2 {
+		opacity: 0;
+	}
+	
+	.change .bar3 {
+		transform: translate(0, -9px) rotate(50deg);
+	}
+	
+	.Link-wrap {
+		width: 80%;
+		height: 100vh;
+		background-color: rgb(1, 17, 11);
+		background-color: black;
+		display: flex;
+		justify-content: space-between;
+		padding-left: 50px;
+		position: fixed;
+		top: 0;
+		right: 0;
+		border-top-left-radius: 25px;
+		padding-top: 50px;
+		z-index: 2;
+		transition: .5s ease-in-out;
+	}
+	
+	#Links {
+		transition: ease-in-out 0.85s;
+		display: none;
+	}
+	
+	#myLinks > a {
+		font-size: 24px;
+		text-decoration: none;
+		margin-bottom: 15px;
+		color: white;
+		transition: ease-in-out 0.3s;
+		display: block;
+		margin-top: 50px;
+	}
+	
+	#myLinks > a:hover {
+		color: var(--hero-link);
+	}
+	
+	#myLinks > .active {
+		color: var(--hero-link);
+	}
+	
+	.active span{
+		height: 3px;
+		background-color: var(--new-white);
+		width: 40px;
+		margin-top: 8px;
+	}
+	
+	.closeHarm {
+		width: 80px;
+		text-decoration: none;
+		padding: 0px 20px 20px;
+	}
+	
+	.closeHarm img {
+		color: white;
+		padding-top: 0px;
+		width: 100%;
+	}
+	
+	span {
+		width: 25px;
+		transition: ease-in-out 0.3s;
+		display: flex;
+		align-items: center;
+	
+	}
+
   .container {
     display: flex;
     padding: 2% 8%;
@@ -388,7 +514,7 @@
 
   .new > article > p {
     color: var(--gray);
-    font-size: 0.85em;
+    font-size: 1em;
     word-spacing: 3.3px;
     line-height: 1.5;
   }
@@ -451,7 +577,7 @@
 	}
 
   .products > article > p {
-    font-size: 0.85em;
+    font-size: 1em;
     font-weight: 500;
     color: var(--para);
   }
