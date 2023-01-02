@@ -1,7 +1,7 @@
 let heroLink = document.querySelector(".hero-link");
 const harm = document.querySelector(".harmburger");
 const link = document.querySelector("#Links");
-const close = document.querySelector(".closeHarm");
+const close = document.querySelector(".closeHarmburger");
 
 function myFunc(x) {
 		if (x.matches) {

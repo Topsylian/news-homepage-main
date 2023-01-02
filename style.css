@@ -142,7 +142,7 @@
 		border-top-left-radius: 25px;
 		padding-top: 50px;
 		z-index: 2;
-		transition: .5s ease-in-out;
+		transition: .85s ease-in-out;
 	}
 	
 	#Links {
@@ -151,7 +151,7 @@
 	}
 	
 	#myLinks > a {
-		font-size: 24px;
+		font-size: 1em;
 		text-decoration: none;
 		margin-bottom: 15px;
 		color: white;
@@ -175,16 +175,20 @@
 		margin-top: 8px;
 	}
 	
-	.closeHarm {
-		width: 80px;
+	.closeHarmburger {
+		width: 35px;
+		height: 35px;
 		text-decoration: none;
-		padding: 0px 20px 20px;
+		padding: 0px 0px 0px;
+		color: white;
+		margin-right: 20px;
 	}
 	
-	.closeHarm img {
+	.closeHarmburger img {
 		color: white;
 		padding-top: 0px;
 		width: 100%;
+		height: fit-content;
 	}
 	
 	span {
